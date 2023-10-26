@@ -1,0 +1,23 @@
+{
+ "name": "FE_avansat",
+ "private": true,
+ "version": "1.0.0",
+ "scripts": {
+  "start": "engine-service-web start",
+  "test": "engine-service-web test",
+  "build": "engine-service-web build"
+ },
+ "devDependencies": {
+  "@c11/engine.service-web": "latest"
+ },
+ "dependencies": {
+  "@c11/engine.dashboard": "4.0.0-alpha.119",
+  "@c11/engine.react": "4.0.0-alpha.119",
+  "@mui/icons-material": "^5.14.15",
+  "@mui/material": "^5.14.15",
+  "react": "^18.2.0",
+  "react-dom": "^18.2.0",
+  "react-router-dom": "^6.17.0",
+  "tailwindcss": "^2.2.15"
+ }
+}
