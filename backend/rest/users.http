@@ -1,0 +1,34 @@
+@api = http://localhost:8888/api
+
+### POST
+POST {{api}}/users/login/vlad
+Content-Type: application/json
+
+{
+    "password": "123456"
+}
+
+### POST
+POST {{api}}/users/signUp
+Content-Type: application/json
+
+{
+    "username": "vlad",
+    "password": "vlad",
+    "email": "vlad.a@gmail.com"
+}
+
+### PUT
+PUT {{api}}/users/2
+Content-Type: application/json
+
+{
+    "role": "anonim"
+}
+
+### GET
+GET {{api}}/users
+
+### GET user by id
+GET {{api}}/users/3
+

@@ -1,0 +1,28 @@
+@api = http://localhost:8888/api
+
+### GET
+GET {{api}}/movies/1/comments
+Content-Type: application/json
+
+### POST
+POST {{api}}/movies/comments
+Content-Type: application/json
+
+{
+    "movieId": 1,
+    "userId": 2,
+    "message": "artttt"
+}
+
+### PUT
+PUT {{api}}/movies/1/comments/1
+Content-Type: application/json
+
+{
+    "description": "a very good movie updated"
+}
+
+### DELETE
+DELETE {{api}}/movies/1/comments/1
+Content-Type: application/json
+

@@ -1,0 +1,30 @@
+.comment {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #2a2525;
+    border-radius: 5px;
+    background-color: #95c3be;
+    box-shadow: 0 0 5px #08351b;
+}
+
+.commentMessage {
+    margin-left: 10px;
+    flex-direction: row;
+}
+
+.commentUsername {
+    font-weight: bold;
+    margin-left: 10px;
+    flex-direction: row;
+}
+
+.commentEditButton {
+    margin-left: 10px;
+    flex-direction: row;
+}
+
+.commentDeleteButton {
+    margin-left: 10px;
+    flex-direction: row;
+}

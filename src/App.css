@@ -1,0 +1,46 @@
+html{
+    --cul3:#3E4200;
+    --cul2:#CEDB16;
+    --cul1:#858F00;
+    --cul4:#240042;
+    --cul5:#4E008F;
+    --inaltime-buton: 2.5em;
+}
+#HomeMain section{
+    border:2px solid black;
+    padding:20px;
+}
+main{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#HomeMain{
+    display:grid;
+    grid-template-areas: "z-despre z-login"
+                         "z-filme z-login"
+                         "z-filme z-login";
+    grid-template-columns: 2fr 1fr;                        
+}
+#Despre{
+    grid-area: z-despre;
+}
+#Filme{
+    grid-area: z-filme;
+}
+#login{
+    grid-area: z-login;
+}
+.Movie{
+    padding: 20px;
+}
+.MovieText{
+    padding: 20px;
+}
+.Comment{
+    padding: 10px;
+}
+.Comment p{
+    border:2px solid black;
+    padding: 10px;
+    background-color: rgb(76, 152, 13);
+}

@@ -6,7 +6,14 @@ import { App } from "./App";
 
 type AppConfig = any;
 
-const state: State = {};
+const state: State = {
+  movies: [],
+  movieId: 0,
+  userId: 0,
+  users: [],
+  comments: [],
+  isLogoutPressed: false,
+};
 
 export const createApp = (config: AppConfig) => {
   const { element } = config;

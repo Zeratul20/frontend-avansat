@@ -1,0 +1,34 @@
+@api = http://localhost:8888/api
+
+### GET
+GET {{api}}/movies
+Content-Type: application/json
+
+### GET Movie
+GET {{api}}/movies/2
+Content-Type: application/json
+
+### POST
+POST {{api}}/movies
+Content-Type: application/json
+
+{
+    "name": "movie3",
+    "views": 5000,
+    "director": "Mircea",
+    "year": 2000,
+    "description": "a good movie"
+}
+
+### PUT
+PUT {{api}}/movies/2
+Content-Type: application/json
+
+{
+    "description": "a very good movie updated"
+}
+
+### DELETE
+DELETE {{api}}/movies/1
+Content-Type: application/json
+
