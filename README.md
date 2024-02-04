@@ -1,4 +1,5 @@
-# Code 11 Standards - Front-End Stub Project · ![](https://img.shields.io/badge/Node-12.4-blue) ![](https://img.shields.io/badge/TypeScript-3.9-blue)
+### Frontend-Avansat ###
+
 
 ### Quickstart
 
@@ -7,7 +8,7 @@ yarn install
 yarn start
 ```
 
-A development server located at http://localhost:8081 will welcome you.
+A development server located at http://localhost:8080 will welcome you.
 While working locally, hot module replacement is enabled
 
 ### Production building
