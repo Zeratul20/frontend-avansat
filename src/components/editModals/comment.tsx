@@ -7,6 +7,9 @@ import Modal from "@mui/material/Modal";
 import { set } from "mongoose";
 import axios from "axios";
 import { TextArea } from "../inputs/textArea";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Input } from "../inputs/input";
+import { Loader } from "../helpers/loader";
 
 const style = {
   position: "absolute" as "absolute",
@@ -32,17 +35,27 @@ export const CommentEditModal: view = ({
   comments = observe.comments,
   updateComments = update.comments,
 }) => {
-  const { comment } = comments.find((comment: any) => comment.id === commentId);
+  if (!comments) return null;
+  const { comment } = comments.find(
+    (comment: any) => comment.id === commentId
+  ) || { comment: null };
+  if (!comment) return null;
   const { message } = comment;
   const [open, setOpen] = useState(false);
   const [data, setData]: any = useState({ message });
+  const [isAddPressed, setIsAddPressed] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  if (isAddPressed) {
+    setIsAddPressed(false);
+    setData({ message: "" });
+    return <Loader />;
+  }
   const handleChange = (value: string, field: string = "message") => {
     data[field] = value;
-    setData(data);
+    const newData = { ...data };
+    setData(newData);
   };
-
 
   const handleClick = (event: any) => {
     console.log(">>> data: ", data);
@@ -66,16 +79,20 @@ export const CommentEditModal: view = ({
       .catch((error) => {
         console.log(error);
       });
+    setIsAddPressed(true);
     setData({ message: "" });
   };
 
-  const textarea = (field: string = "message") => {
+  const input = (field: string = "message", placeholder: string = "") => {
     return (
-      <TextArea
-        handleChange={handleChange}
-        field={field}
-        value={data[field] || ""}
-      />
+      <>
+        <Input
+          handleChange={handleChange}
+          field={field}
+          placeholder={placeholder}
+          value={isAddPressed ? "" : data[field] || ""}
+        />
+      </>
     );
   };
 
@@ -98,14 +115,14 @@ export const CommentEditModal: view = ({
                 <label className="messageLabel" htmlFor="message">
                   Message
                 </label>
-                {textarea()}
+                {input()}
               </div>
               <button
-                className="editButton"
+                className="btn btn-outline-primary"
                 disabled={isButtonDisabled(data, comment)}
                 onClick={handleClick}
               >
-                Edit Movie
+                Edit comment
               </button>
             </div>
           </Typography>

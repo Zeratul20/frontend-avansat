@@ -6,6 +6,7 @@ import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import axios from "axios";
 import "./style.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const style = {
   position: "absolute" as "absolute",
@@ -63,7 +64,7 @@ export const MovieDeleteModal: view = ({
               <div className="message">
                 Are you sure you want to delete this movie?
               </div>
-              <button className="deleteButton" onClick={handleClick}>
+              <button className="btn btn-delete" onClick={handleClick}>
                 Delete
               </button>
             </div>

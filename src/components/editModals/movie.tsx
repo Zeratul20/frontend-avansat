@@ -34,6 +34,7 @@ export const MovieEditModal: view = ({
   movieId,
 }) => {
   const movie = movies.find((movie: any) => movie.id === movieId);
+  if (!movie) return null;
   console.log(">>>movie: ", movie);
   const { description } = movie;
   const [open, setOpen] = useState(false);
@@ -99,7 +100,7 @@ export const MovieEditModal: view = ({
                 {textarea()}
               </div>
               <button
-                className="editButton"
+                className="btn btn-outline-primary"
                 disabled={isButtonDisabled(data, movie)}
                 onClick={handleClick}
               >

@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export const TextArea = ({ value, handleChange, field, ...rest }: any) => {
   const [_value, setValue] = useState(value);
@@ -11,7 +12,7 @@ export const TextArea = ({ value, handleChange, field, ...rest }: any) => {
 
   return (
     <textarea
-      className="textarea"
+      className="form-control"
       value={_value}
       onChange={overrideChange}
       {...rest}

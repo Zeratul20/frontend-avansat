@@ -21,6 +21,7 @@ import { MovieAddModal } from "../components/addModals/movie";
 import { MovieEditModal } from "../components/editModals/movie";
 import { MovieDeleteModal } from "../components/deleteModals/movie";
 import { LikeButton } from "../components/movieButtons/like";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 interface TablePaginationActionsProps {
   count: number;
@@ -150,9 +151,9 @@ export const MoviesTable: view = ({
   // };
 
   return (
-    <div>
-      <TableContainer component={Paper}>
-        <Table sx={{ minWidth: 500 }} aria-label="custom pagination table">
+    <div style={{margin: "3rem", paddingRight: "50px"}}>
+      <TableContainer component={Paper} >
+        <Table sx={{ minWidth: 500 }} aria-label="custom pagination table" >
           <TableHead>
             <TableRow>
               <TableCell>Movie</TableCell>
@@ -171,6 +172,7 @@ export const MoviesTable: view = ({
               <TableRow key={movie.title}>
                 <TableCell component="th" scope="row">
                   <button
+                    className="btn btn-outline-secondary"
                     onClick={() => {
                       navigate(`/movies/${movie.id}/${userId}`);
                       updateMovieId.set(movie.id);
@@ -197,7 +199,7 @@ export const MoviesTable: view = ({
                 </TableCell>
                 <TableCell style={{ width: 160 }} align="right">
                   <LikeButton movieId={movie.id} />
-                  {movie.likes}
+                  {movie.likes >= 0 ? movie.likes : 0}
                 </TableCell>
                 <TableCell style={{ width: 160 }} align="right">
                   <MovieEditModal movieId={movie.id} />

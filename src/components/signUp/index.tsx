@@ -51,6 +51,7 @@ export const SignUp = () => {
       label: "Password",
       placeholder: "Enter your password",
       field: "password",
+      type: "password",
     },
     {
       label: "Email",

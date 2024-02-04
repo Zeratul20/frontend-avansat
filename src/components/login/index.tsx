@@ -49,6 +49,7 @@ export const Login: view = ({ updateUserId = update.userId }: any) => {
       label: "Password",
       placeholder: "Enter your password",
       field: "password",
+      type: "password"
     },
   ];
 

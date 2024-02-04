@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
@@ -8,6 +8,7 @@ import { set } from "mongoose";
 import axios from "axios";
 import { Input } from "../inputs/input";
 import { TextArea } from "../inputs/textArea";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const style = {
   position: "absolute" as "absolute",
@@ -21,12 +22,16 @@ const style = {
   p: 4,
 };
 
-const isButtonDisabled = (data: any) => {
+const isButtonDisabledFunc = (data: any) => {
   console.log(">>>data: ", data);
   const { name, director, year, description } = data;
   if (name && director && year && description) {
     return false;
   }
+  console.log("name: ", name);
+  console.log("director: ", director);
+  console.log("year: ", year);
+  console.log("description: ", description);
   return true;
 };
 
@@ -41,12 +46,21 @@ export const MovieAddModal: view = ({
     year: 0,
     description: "",
   });
+  const [isButtonDisabled, setButtonDisabled] = useState(true);
+  useEffect(() => {
+    console.log(">>.in effect")
+    if(isButtonDisabledFunc(data) === false)
+      setButtonDisabled(false);
+  }, [data.name, data.director, data.year, data.description]);
+  console.log(">>>data in modal: ", data)
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   const handleChange = (value: string, field: string) => {
+    console.log(">>>value, field: ", value, field)
     if (field === "likes" || field === "year") data[field] = parseInt(value);
     else data[field] = value;
-    setData(data);
+    const newData = {...data}
+    setData(newData);
   };
 
   const handleClick = (event: any) => {
@@ -101,8 +115,8 @@ export const MovieAddModal: view = ({
   };
 
   return (
-    <div>
-      <Button onClick={handleOpen}>Add a movie</Button>
+    <div className="pt-2">
+      <button className="btn btn-outline-primary" onClick={handleOpen}>Add a movie</button>
       <Modal
         open={open}
         onClose={handleClose}
@@ -118,10 +132,10 @@ export const MovieAddModal: view = ({
               {input("name", "Name", "Movie Name")}
               {input("director", "Director", "Director Name")}
               {input("year", "Year", "Year")}
-              {textarea("description", "Description", "Description")}
+              {input("description", "Description", "Description")}
               <button
-                className="addButton"
-                disabled={isButtonDisabled(data)}
+                className="btn btn-outline-success"
+                disabled={isButtonDisabled}
                 onClick={handleClick}
               >
                 Add Movie

@@ -7,6 +7,7 @@ export const Movie: view = ({
   movieId = observe.movieId,
 }) => {
   const movie = movies.find((movie: any) => movie.id === movieId);
+  if(!movie) return null;
 
   const { director, name, year, likes, description } = movie;
 

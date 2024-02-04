@@ -4,6 +4,7 @@ import "./comments.css";
 // import "../App.css";
 import { CommentEditModal } from "../components/editModals/comment";
 import { Input } from "../components/inputs/input";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export const Comments: view = ({
   movieId = observe.movieId,
@@ -67,8 +68,9 @@ export const Comments: view = ({
             )}
             {comment.userId == userId && comment.userId != 2 && (
               <button
-                className="commentDeleteButton"
+                className="btn btn-outline-danger btn-sm"
                 onClick={(e) => handleDelete(e, comment.id)}
+                style={{blockSize: "2rem", marginLeft: "2rem"}}
               >
                 Delete
               </button>
@@ -78,7 +80,7 @@ export const Comments: view = ({
       ))}
       {/* <input onChange={handleAddChange} defaultValue={message} /> */}
       {input()}
-      <button onClick={handleAddClick}>Add comment</button>
+      <button className="btn btn-outline-primary" onClick={handleAddClick}>Add comment</button>
     </div>
   );
 };

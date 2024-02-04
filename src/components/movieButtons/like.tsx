@@ -9,6 +9,7 @@ export const LikeButton: view = ({
   movieId,
 }: any) => {
   const movie = movies.find((movie: any) => movie.id === movieId);
+  if(!movie) return null;
   console.log(">>>userId: ", userId);
   const { likes } = movie;
   const [wasLiked, setWasLiked] = useState(false);
@@ -35,7 +36,7 @@ export const LikeButton: view = ({
   };
   return (
     <div>
-      <button disabled={userId === 2} onClick={handleLikeButtonPressed}>
+      <button disabled={userId === 2} onClick={handleLikeButtonPressed} style={{border: "none"}}>
         ❤️
       </button>
     </div>

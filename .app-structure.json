@@ -1,6 +1,38 @@
 {
+ "/home/vlad/facultate/FE_avansat/src/createApp.tsx": {
+  "BtZpOFvhEuJbZsZ": {
+   "type": "producer",
+   "meta": {
+    "name": "receiveUpdates",
+    "location": {
+     "start": {
+      "line": 24,
+      "column": 10
+     },
+     "end": {
+      "line": 32,
+      "column": 5
+     }
+    },
+    "absoluteFilePath": "/home/vlad/facultate/FE_avansat/src/createApp.tsx",
+    "absoluteRootPath": "/home/vlad/facultate/FE_avansat",
+    "relativeFilePath": "src/createApp.tsx"
+   },
+   "sourceId": "/home/vlad/facultate/FE_avansat/src/createApp.tsx:receiveUpdates",
+   "buildId": "BtZpOFvhEuJbZsZ",
+   "params": {
+    "type": "STRUCT",
+    "value": {
+     "updatePath": {
+      "type": "CONSTRUCTOR",
+      "value": "update"
+     }
+    }
+   }
+  }
+ },
  "/home/vlad/facultate/FE_avansat/src/App.tsx": {
-  "nbDagRbaiDjszTB": {
+  "YRGGgbUaj_sHYdd": {
    "type": "view",
    "meta": {
     "name": "App",
@@ -19,24 +51,24 @@
     "relativeFilePath": "src/App.tsx"
    },
    "sourceId": "/home/vlad/facultate/FE_avansat/src/App.tsx:App",
-   "buildId": "nbDagRbaiDjszTB",
+   "buildId": "YRGGgbUaj_sHYdd",
    "params": {
     "type": "PASSTHROUGH"
    }
   }
  },
  "/home/vlad/facultate/FE_avansat/src/views/movies.tsx": {
-  "bHYnxUsQcxgvQSL": {
+  "hfkWAMIAdAlzYYA": {
    "type": "view",
    "meta": {
     "name": "MoviesTable",
     "location": {
      "start": {
-      "line": 105,
+      "line": 106,
       "column": 13
      },
      "end": {
-      "line": 241,
+      "line": 243,
       "column": 1
      }
     },
@@ -45,7 +77,7 @@
     "relativeFilePath": "src/views/movies.tsx"
    },
    "sourceId": "/home/vlad/facultate/FE_avansat/src/views/movies.tsx:MoviesTable",
-   "buildId": "bHYnxUsQcxgvQSL",
+   "buildId": "hfkWAMIAdAlzYYA",
    "params": {
     "type": "STRUCT",
     "value": {
@@ -90,7 +122,7 @@
   }
  },
  "/home/vlad/facultate/FE_avansat/src/views/movie.tsx": {
-  "VSJbvKsHFwiMzNA": {
+  "rpGWCpuTtnvjWtn": {
    "type": "view",
    "meta": {
     "name": "Movie",
@@ -100,7 +132,7 @@
       "column": 13
      },
      "end": {
-      "line": 42,
+      "line": 43,
       "column": 1
      }
     },
@@ -109,7 +141,7 @@
     "relativeFilePath": "src/views/movie.tsx"
    },
    "sourceId": "/home/vlad/facultate/FE_avansat/src/views/movie.tsx:Movie",
-   "buildId": "VSJbvKsHFwiMzNA",
+   "buildId": "rpGWCpuTtnvjWtn",
    "params": {
     "type": "STRUCT",
     "value": {
@@ -135,18 +167,101 @@
    }
   }
  },
- "/home/vlad/facultate/FE_avansat/src/views/comments.tsx": {
-  "CUFFWyACVrSPtSi": {
+ "/home/vlad/facultate/FE_avansat/src/components/navbar.tsx": {
+  "zzBWmdNjr_LBiUE": {
    "type": "view",
    "meta": {
-    "name": "Comments",
+    "name": "NavBar",
+    "location": {
+     "start": {
+      "line": 21,
+      "column": 13
+     },
+     "end": {
+      "line": 226,
+      "column": 1
+     }
+    },
+    "absoluteFilePath": "/home/vlad/facultate/FE_avansat/src/components/navbar.tsx",
+    "absoluteRootPath": "/home/vlad/facultate/FE_avansat",
+    "relativeFilePath": "src/components/navbar.tsx"
+   },
+   "sourceId": "/home/vlad/facultate/FE_avansat/src/components/navbar.tsx:NavBar",
+   "buildId": "zzBWmdNjr_LBiUE",
+   "params": {
+    "type": "STRUCT",
+    "value": {
+     "userId": {
+      "type": "OBSERVE",
+      "path": [
+       {
+        "type": "CONST",
+        "value": "userId"
+       }
+      ]
+     },
+     "updateIsLogoutPressed": {
+      "type": "UPDATE",
+      "path": [
+       {
+        "type": "CONST",
+        "value": "isLogoutPressed"
+       }
+      ]
+     }
+    }
+   }
+  }
+ },
+ "/home/vlad/facultate/FE_avansat/src/components/login/index.tsx": {
+  "RLQOcDscEgHNFIc": {
+   "type": "view",
+   "meta": {
+    "name": "Login",
     "location": {
      "start": {
       "line": 8,
       "column": 13
      },
      "end": {
-      "line": 84,
+      "line": 76,
+      "column": 1
+     }
+    },
+    "absoluteFilePath": "/home/vlad/facultate/FE_avansat/src/components/login/index.tsx",
+    "absoluteRootPath": "/home/vlad/facultate/FE_avansat",
+    "relativeFilePath": "src/components/login/index.tsx"
+   },
+   "sourceId": "/home/vlad/facultate/FE_avansat/src/components/login/index.tsx:Login",
+   "buildId": "RLQOcDscEgHNFIc",
+   "params": {
+    "type": "STRUCT",
+    "value": {
+     "updateUserId": {
+      "type": "UPDATE",
+      "path": [
+       {
+        "type": "CONST",
+        "value": "userId"
+       }
+      ]
+     }
+    }
+   }
+  }
+ },
+ "/home/vlad/facultate/FE_avansat/src/views/comments.tsx": {
+  "ZpdcHbVKgdPOWmW": {
+   "type": "view",
+   "meta": {
+    "name": "Comments",
+    "location": {
+     "start": {
+      "line": 9,
+      "column": 13
+     },
+     "end": {
+      "line": 86,
       "column": 1
      }
     },
@@ -155,7 +270,7 @@
     "relativeFilePath": "src/views/comments.tsx"
    },
    "sourceId": "/home/vlad/facultate/FE_avansat/src/views/comments.tsx:Comments",
-   "buildId": "CUFFWyACVrSPtSi",
+   "buildId": "ZpdcHbVKgdPOWmW",
    "params": {
     "type": "STRUCT",
     "value": {
@@ -199,18 +314,73 @@
    }
   }
  },
+ "/home/vlad/facultate/FE_avansat/src/components/editModals/movie.tsx": {
+  "pJPBXiECeeiEzBA": {
+   "type": "view",
+   "meta": {
+    "name": "MovieEditModal",
+    "location": {
+     "start": {
+      "line": 31,
+      "column": 13
+     },
+     "end": {
+      "line": 115,
+      "column": 1
+     }
+    },
+    "absoluteFilePath": "/home/vlad/facultate/FE_avansat/src/components/editModals/movie.tsx",
+    "absoluteRootPath": "/home/vlad/facultate/FE_avansat",
+    "relativeFilePath": "src/components/editModals/movie.tsx"
+   },
+   "sourceId": "/home/vlad/facultate/FE_avansat/src/components/editModals/movie.tsx:MovieEditModal",
+   "buildId": "pJPBXiECeeiEzBA",
+   "params": {
+    "type": "STRUCT",
+    "value": {
+     "movies": {
+      "type": "OBSERVE",
+      "path": [
+       {
+        "type": "CONST",
+        "value": "movies"
+       }
+      ]
+     },
+     "updateMovies": {
+      "type": "UPDATE",
+      "path": [
+       {
+        "type": "CONST",
+        "value": "movies"
+       }
+      ]
+     },
+     "movieId": {
+      "type": "VALUE",
+      "value": {
+       "type": "EXTERNAL",
+       "path": [
+        "movieId"
+       ]
+      }
+     }
+    }
+   }
+  }
+ },
  "/home/vlad/facultate/FE_avansat/src/components/addModals/movie.tsx": {
-  "_EYMJXUAlifxcjR": {
+  "eG_eMszmYlkBIBB": {
    "type": "view",
    "meta": {
     "name": "MovieAddModal",
     "location": {
      "start": {
-      "line": 33,
+      "line": 38,
       "column": 13
      },
      "end": {
-      "line": 135,
+      "line": 149,
       "column": 1
      }
     },
@@ -219,7 +389,7 @@
     "relativeFilePath": "src/components/addModals/movie.tsx"
    },
    "sourceId": "/home/vlad/facultate/FE_avansat/src/components/addModals/movie.tsx:MovieAddModal",
-   "buildId": "_EYMJXUAlifxcjR",
+   "buildId": "eG_eMszmYlkBIBB",
    "params": {
     "type": "STRUCT",
     "value": {
@@ -246,17 +416,17 @@
   }
  },
  "/home/vlad/facultate/FE_avansat/src/components/deleteModals/movie.tsx": {
-  "ddAHATDEBzZxzAt": {
+  "wSBFoKydWlToLQv": {
    "type": "view",
    "meta": {
     "name": "MovieDeleteModal",
     "location": {
      "start": {
-      "line": 22,
+      "line": 23,
       "column": 13
      },
      "end": {
-      "line": 75,
+      "line": 76,
       "column": 1
      }
     },
@@ -265,7 +435,7 @@
     "relativeFilePath": "src/components/deleteModals/movie.tsx"
    },
    "sourceId": "/home/vlad/facultate/FE_avansat/src/components/deleteModals/movie.tsx:MovieDeleteModal",
-   "buildId": "ddAHATDEBzZxzAt",
+   "buildId": "wSBFoKydWlToLQv",
    "params": {
     "type": "STRUCT",
     "value": {
@@ -301,7 +471,7 @@
   }
  },
  "/home/vlad/facultate/FE_avansat/src/components/movieButtons/like.tsx": {
-  "AnSyWhEqcNrmkYh": {
+  "ZBWPSmdjaKVTwWF": {
    "type": "view",
    "meta": {
     "name": "LikeButton",
@@ -311,7 +481,7 @@
       "column": 13
      },
      "end": {
-      "line": 43,
+      "line": 44,
       "column": 1
      }
     },
@@ -320,7 +490,7 @@
     "relativeFilePath": "src/components/movieButtons/like.tsx"
    },
    "sourceId": "/home/vlad/facultate/FE_avansat/src/components/movieButtons/like.tsx:LikeButton",
-   "buildId": "AnSyWhEqcNrmkYh",
+   "buildId": "ZBWPSmdjaKVTwWF",
    "params": {
     "type": "STRUCT",
     "value": {
@@ -364,63 +534,63 @@
    }
   }
  },
- "/home/vlad/facultate/FE_avansat/src/components/editModals/movie.tsx": {
-  "LwExybyvEFdJYbS": {
-   "type": "view",
+ "/home/vlad/facultate/FE_avansat/src/producers/logout.ts": {
+  "sMyTrSBJBp__gxM": {
+   "type": "producer",
    "meta": {
-    "name": "MovieEditModal",
+    "name": "Logout",
     "location": {
      "start": {
-      "line": 31,
+      "line": 1,
       "column": 13
      },
      "end": {
-      "line": 114,
+      "line": 11,
       "column": 1
      }
     },
-    "absoluteFilePath": "/home/vlad/facultate/FE_avansat/src/components/editModals/movie.tsx",
+    "absoluteFilePath": "/home/vlad/facultate/FE_avansat/src/producers/logout.ts",
     "absoluteRootPath": "/home/vlad/facultate/FE_avansat",
-    "relativeFilePath": "src/components/editModals/movie.tsx"
+    "relativeFilePath": "src/producers/logout.ts"
    },
-   "sourceId": "/home/vlad/facultate/FE_avansat/src/components/editModals/movie.tsx:MovieEditModal",
-   "buildId": "LwExybyvEFdJYbS",
+   "sourceId": "/home/vlad/facultate/FE_avansat/src/producers/logout.ts:Logout",
+   "buildId": "sMyTrSBJBp__gxM",
    "params": {
     "type": "STRUCT",
     "value": {
-     "movies": {
+     "isLogoutPressed": {
       "type": "OBSERVE",
       "path": [
        {
         "type": "CONST",
-        "value": "movies"
+        "value": "isLogoutPressed"
        }
       ]
      },
-     "updateMovies": {
+     "updateIsLogoutPressed": {
       "type": "UPDATE",
       "path": [
        {
         "type": "CONST",
-        "value": "movies"
+        "value": "isLogoutPressed"
        }
       ]
      },
-     "movieId": {
-      "type": "VALUE",
-      "value": {
-       "type": "EXTERNAL",
-       "path": [
-        "movieId"
-       ]
-      }
+     "updateUserId": {
+      "type": "UPDATE",
+      "path": [
+       {
+        "type": "CONST",
+        "value": "userId"
+       }
+      ]
      }
     }
    }
   }
  },
  "/home/vlad/facultate/FE_avansat/src/producers/initState.ts": {
-  "IjXagJCbTtBIORg": {
+  "MiirumBmtTJMMMX": {
    "type": "producer",
    "meta": {
     "name": "initState",
@@ -439,7 +609,7 @@
     "relativeFilePath": "src/producers/initState.ts"
    },
    "sourceId": "/home/vlad/facultate/FE_avansat/src/producers/initState.ts:initState",
-   "buildId": "IjXagJCbTtBIORg",
+   "buildId": "MiirumBmtTJMMMX",
    "params": {
     "type": "STRUCT",
     "value": {
@@ -493,17 +663,17 @@
   }
  },
  "/home/vlad/facultate/FE_avansat/src/components/editModals/comment.tsx": {
-  "aNUVfwxeOcpvrCK": {
+  "WtaStWOWKbiEy_I": {
    "type": "view",
    "meta": {
     "name": "CommentEditModal",
     "location": {
      "start": {
-      "line": 29,
+      "line": 32,
       "column": 13
      },
      "end": {
-      "line": 116,
+      "line": 133,
       "column": 1
      }
     },
@@ -512,7 +682,7 @@
     "relativeFilePath": "src/components/editModals/comment.tsx"
    },
    "sourceId": "/home/vlad/facultate/FE_avansat/src/components/editModals/comment.tsx:CommentEditModal",
-   "buildId": "aNUVfwxeOcpvrCK",
+   "buildId": "WtaStWOWKbiEy_I",
    "params": {
     "type": "STRUCT",
     "value": {
@@ -556,92 +726,14 @@
    }
   }
  },
- "/home/vlad/facultate/FE_avansat/src/createApp.tsx": {
-  "jdhFVJeJvFySBhA": {
-   "type": "producer",
-   "meta": {
-    "name": "receiveUpdates",
-    "location": {
-     "start": {
-      "line": 24,
-      "column": 10
-     },
-     "end": {
-      "line": 32,
-      "column": 5
-     }
-    },
-    "absoluteFilePath": "/home/vlad/facultate/FE_avansat/src/createApp.tsx",
-    "absoluteRootPath": "/home/vlad/facultate/FE_avansat",
-    "relativeFilePath": "src/createApp.tsx"
-   },
-   "sourceId": "/home/vlad/facultate/FE_avansat/src/createApp.tsx:receiveUpdates",
-   "buildId": "jdhFVJeJvFySBhA",
-   "params": {
-    "type": "STRUCT",
-    "value": {
-     "updatePath": {
-      "type": "CONSTRUCTOR",
-      "value": "update"
-     }
-    }
-   }
-  }
- },
- "/home/vlad/facultate/FE_avansat/src/components/navbar.tsx": {
-  "dHHynqvUMLrJjoB": {
+ "/home/vlad/facultate/FE_avansat/src/components/helpers/loader.tsx": {
+  "D_QpDkxmQVnCuU_": {
    "type": "view",
    "meta": {
-    "name": "NavBar",
+    "name": "Loader",
     "location": {
      "start": {
-      "line": 21,
-      "column": 13
-     },
-     "end": {
-      "line": 256,
-      "column": 1
-     }
-    },
-    "absoluteFilePath": "/home/vlad/facultate/FE_avansat/src/components/navbar.tsx",
-    "absoluteRootPath": "/home/vlad/facultate/FE_avansat",
-    "relativeFilePath": "src/components/navbar.tsx"
-   },
-   "sourceId": "/home/vlad/facultate/FE_avansat/src/components/navbar.tsx:NavBar",
-   "buildId": "dHHynqvUMLrJjoB",
-   "params": {
-    "type": "STRUCT",
-    "value": {
-     "userId": {
-      "type": "OBSERVE",
-      "path": [
-       {
-        "type": "CONST",
-        "value": "userId"
-       }
-      ]
-     },
-     "updateIsLogoutPressed": {
-      "type": "UPDATE",
-      "path": [
-       {
-        "type": "CONST",
-        "value": "isLogoutPressed"
-       }
-      ]
-     }
-    }
-   }
-  }
- },
- "/home/vlad/facultate/FE_avansat/src/producers/logout.ts": {
-  "QltrkrhZQNHYTAO": {
-   "type": "producer",
-   "meta": {
-    "name": "Logout",
-    "location": {
-     "start": {
-      "line": 1,
+      "line": 4,
       "column": 13
      },
      "end": {
@@ -649,80 +741,14 @@
       "column": 1
      }
     },
-    "absoluteFilePath": "/home/vlad/facultate/FE_avansat/src/producers/logout.ts",
+    "absoluteFilePath": "/home/vlad/facultate/FE_avansat/src/components/helpers/loader.tsx",
     "absoluteRootPath": "/home/vlad/facultate/FE_avansat",
-    "relativeFilePath": "src/producers/logout.ts"
+    "relativeFilePath": "src/components/helpers/loader.tsx"
    },
-   "sourceId": "/home/vlad/facultate/FE_avansat/src/producers/logout.ts:Logout",
-   "buildId": "QltrkrhZQNHYTAO",
+   "sourceId": "/home/vlad/facultate/FE_avansat/src/components/helpers/loader.tsx:Loader",
+   "buildId": "D_QpDkxmQVnCuU_",
    "params": {
-    "type": "STRUCT",
-    "value": {
-     "isLogoutPressed": {
-      "type": "OBSERVE",
-      "path": [
-       {
-        "type": "CONST",
-        "value": "isLogoutPressed"
-       }
-      ]
-     },
-     "updateIsLogoutPressed": {
-      "type": "UPDATE",
-      "path": [
-       {
-        "type": "CONST",
-        "value": "isLogoutPressed"
-       }
-      ]
-     },
-     "updateUserId": {
-      "type": "UPDATE",
-      "path": [
-       {
-        "type": "CONST",
-        "value": "userId"
-       }
-      ]
-     }
-    }
-   }
-  }
- },
- "/home/vlad/facultate/FE_avansat/src/components/login/index.tsx": {
-  "ZtpdczPcHGdU_yV": {
-   "type": "view",
-   "meta": {
-    "name": "Login",
-    "location": {
-     "start": {
-      "line": 8,
-      "column": 13
-     },
-     "end": {
-      "line": 75,
-      "column": 1
-     }
-    },
-    "absoluteFilePath": "/home/vlad/facultate/FE_avansat/src/components/login/index.tsx",
-    "absoluteRootPath": "/home/vlad/facultate/FE_avansat",
-    "relativeFilePath": "src/components/login/index.tsx"
-   },
-   "sourceId": "/home/vlad/facultate/FE_avansat/src/components/login/index.tsx:Login",
-   "buildId": "ZtpdczPcHGdU_yV",
-   "params": {
-    "type": "STRUCT",
-    "value": {
-     "updateUserId": {
-      "type": "UPDATE",
-      "path": [
-       {
-        "type": "CONST",
-        "value": "userId"
-       }
-      ]
-     }
-    }
+    "type": "PASSTHROUGH"
    }
   }
  }
