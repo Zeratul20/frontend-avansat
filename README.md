@@ -1,4 +1,4 @@
-### Frontend-Avansat ###
+### Frontend-Avansat Project ###
 
 
 ### Quickstart
